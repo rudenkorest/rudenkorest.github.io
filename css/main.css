@@ -67,6 +67,23 @@ li {
 
 }
 
+li::after {
+  background-color: #f15929;
+    margin-top: 5px;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+li:hover:after,
+li:focus:after {
+    width: 100%;
+}
+
 .button {
   width: 125px;
   height: 32px;
