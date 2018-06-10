@@ -7,6 +7,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="css/twentytwenty.css">
 </head>
 <body>
   <header class="header">
@@ -71,5 +73,68 @@
     <!-- /.container -->
   </header>
   <!-- /.header -->
+
+  <div class="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="about_text">
+            <h2 class="about_title">Что это?</h2>
+            <p class="about_subtitle">С помощью данной карточки у её владельцах есть возможность<br>получить скидки в различных заведениях Ирпеня </p>
+          </div>
+
+          <div class="circle_up">
+            <img src="img/circle_up.png" alt="">
+          </div>
+
+          <div class="circle_down">
+            <img src="img/circle_down.png" alt="">
+          </div>
+
+          <!-- /.about_text -->
+        </div>
+        <!-- /.col-md-3 -->
+        <div class="col-md-6">
+            <img class="about_image" src="img/photo_hand.png" alt="">
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+  <!-- /.about -->
+
+  <div class="howto">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+        <div class="howto_text">
+          <h1>sbdfsjfkdnskfdnjks</h1>
+        </div>
+        </div>
+        <!-- /.col-md-5 -->
+        <div class="col-md-6">
+          <div id="container1">
+            <img src="img/musor_before.jpg">
+            <img src="img/musor_after.jpg">
+          </div>
+        </div>
+        <!-- /.col-md-7 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.howto -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script>
+  $(window).load(function() {
+  $("#container1").twentytwenty();
+  });
+  </script>
 </body>
 </html>

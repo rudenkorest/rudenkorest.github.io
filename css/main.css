@@ -50,13 +50,13 @@ a {
 }
 
 .logo {
-  margin-top: 11px;
+  margin-top: 15px;
 }
 
 .header_nav {
   list-style: none;
   color: #fff;
-  margin-top: 25px;;
+  margin-top: 35px;;
 
 }
 
@@ -90,6 +90,7 @@ li:focus:after {
   border-radius: 16px;
   background-color: #f15929;
   margin-left: 100px;
+  margin-top: 35px;
 }
 
 .button_text {
@@ -98,7 +99,6 @@ li:focus:after {
   color: #fff;
   text-align: center;
   line-height: 32px;
-  margin-top: 25px;
 }
 
 .main_title {
@@ -194,3 +194,43 @@ li:focus:after {
 }
 .card:hover .front {transform: rotateY(180deg);}
 .card:hover .back {transform: rotateY(360deg);}
+
+
+
+.about {
+  height: 100%;
+  margin: 0;
+}
+
+.about_title {
+  font-family: "ProximaBold", sans-serif;
+  font-size: 54px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.about_image {
+  height: 730px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.about_subtitle {
+  font-family: "ProximaRegular", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 155px;
+}
+
+.circle_up {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  z-index: -1;
+}
+.circle_down {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
