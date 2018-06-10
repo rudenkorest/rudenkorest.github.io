@@ -200,6 +200,7 @@ li:focus:after {
 .about {
   height: 100%;
   margin: 0;
+  padding: 0;
 }
 
 .about_title {
@@ -210,7 +211,7 @@ li:focus:after {
 }
 
 .about_image {
-  height: 730px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -233,4 +234,12 @@ li:focus:after {
   position: absolute;
   bottom: -5px;
   left: 0;
+}
+
+.line {
+  border-bottom: 20px solid #f15929;
+}
+
+.container-fluid {
+   padding: 0px;
 }
