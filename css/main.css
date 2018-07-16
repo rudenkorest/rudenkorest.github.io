@@ -333,13 +333,97 @@ li:focus:after {
 }
 
 /* ADAPTIVE */
-@media (max-width: 576px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
 
 
   .logo {
     text-align: center;
 
 
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+
+  }
+  .button {
+    text-align: center;
+    margin: auto;
+    margin-top: -10px;
+  }
+
+  .main_title {
+    font-family: "ProximaBold", sans-serif;
+    color: #fff;
+    font-size: 55px;
+    line-height: 55px;
+    margin-bottom: 7px;
+    margin-top: -130px;
+  }
+
+  .wrap {
+    margin-top: 90px;
+  }
+
+  .button_main {
+    visibility: hidden;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+
+
+  .logo {
+    text-align: center;
+
+
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+
+  }
+  .button {
+    text-align: center;
+    margin: auto;
+    margin-top: -10px;
+  }
+
+  .main_title {
+    font-family: "ProximaBold", sans-serif;
+    color: #fff;
+    font-size: 55px;
+    line-height: 55px;
+    margin-bottom: 7px;
+    margin-top: -130px;
+  }
+
+  .wrap {
+    margin-top: 90px;
+  }
+
+  .button_main {
+    visibility: hidden;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+
+  .logo {
+    text-align: center;
+
+
+  }
+
+  .header_nav {
+    text-align: center;
   }
 
   li {
