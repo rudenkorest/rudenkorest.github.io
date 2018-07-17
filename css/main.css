@@ -402,7 +402,7 @@ li:focus:after {
   li {
     display: inline-block;
     margin-right: 7px;
-    font-size: 14px;
+    font-size: 13px;
 
   }
   .button {
@@ -435,16 +435,7 @@ li:focus:after {
   }
 
   .wrap {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-
+    margin-top: 2px;
   }
 
   .card {
@@ -452,27 +443,6 @@ li:focus:after {
     height: 184px;
     position: relative;
     perspective: 1000px;
-  }
-
-  .front, .back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-    backface-visibility: hidden;
-    border-radius: 10px;
-
-    background: url('../img/card_front.png') no-repeat center center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-
   }
 
   .front {
