@@ -28,10 +28,14 @@
   font-weight: normal;
 }
 
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
+
 body {
   font-family: "ProximaRegular", sans-serif;
-  font-size: 18pxl
-  margin: 0;
+  font-size: 18px;
+  overflow-x: hidden;
 }
 
 header {
@@ -370,7 +374,6 @@ li:focus:after {
   .button_main {
     visibility: hidden;
   }
-
 }
 
 @media (max-width: 575.98px) {
@@ -455,4 +458,9 @@ li:focus:after {
     visibility: hidden;
   }
 
+  .arrow {
+    visibility: hidden;
+  }
+
+  
 }
