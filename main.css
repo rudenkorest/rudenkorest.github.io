@@ -28,10 +28,22 @@
   font-weight: normal;
 }
 
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+
+
+html, body {
+  height: 100%;
+  overflow-x: hidden !important;
+  width: 100%;
+  position: fixed;
+
+
+}
+
 body {
   font-family: "ProximaRegular", sans-serif;
-  font-size: 18pxl
-  margin: 0;
+  font-size: 18px;
 }
 
 header {
@@ -370,7 +382,6 @@ li:focus:after {
   .button_main {
     visibility: hidden;
   }
-
 }
 
 @media (max-width: 575.98px) {
@@ -455,4 +466,18 @@ li:focus:after {
     visibility: hidden;
   }
 
+  .arrow {
+    visibility: hidden;
+  }
+
+  .circle_up {
+    visibility: hidden;
+    margin-right: 30px;
+  }
+  .bg_plus {
+    visibility: hidden;
+  }
+  .bg {
+    visibility: hidden;
+  }
 }
