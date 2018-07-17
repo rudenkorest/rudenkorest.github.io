@@ -34,6 +34,7 @@
 html, body {
   height: 100%;
   overflow-x: hidden !important;
+  overflow-y: scroll !important;
   width: 100%;
   position: fixed;
 
@@ -400,9 +401,10 @@ li:focus:after {
   }
 
   li {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 12px;
+    display: block;
+    margin-right: 45px;
+    font-size: 13px;
+    text-align: center;
 
   }
   .button {
