@@ -32,10 +32,18 @@
 
 
 
+html, body {
+  height: 100%;
+  overflow-x: hidden !important;
+  width: 100%;
+  position: fixed;
+
+
+}
+
 body {
   font-family: "ProximaRegular", sans-serif;
   font-size: 18px;
-  overflow-x: hidden;
 }
 
 header {
@@ -462,5 +470,14 @@ li:focus:after {
     visibility: hidden;
   }
 
-  
+  .circle_up {
+    visibility: hidden;
+    margin-right: 30px;
+  }
+  .bg_plus {
+    visibility: hidden;
+  }
+  .bg {
+    visibility: hidden;
+  }
 }
