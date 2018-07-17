@@ -38,7 +38,6 @@ html, body {
   width: 100%;
   position: fixed;
 
-
 }
 
 body {
@@ -386,6 +385,14 @@ li:focus:after {
 
 @media (max-width: 575.98px) {
 
+  header {
+    height: 1000px;
+    background: url('../img/background_main.png') no-repeat center center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+  }
 
   .logo {
     text-align: center;
@@ -395,7 +402,7 @@ li:focus:after {
 
   li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 14px;
 
   }
@@ -408,14 +415,29 @@ li:focus:after {
   .main_title {
     font-family: "ProximaBold", sans-serif;
     color: #fff;
-    font-size: 55px;
-    line-height: 55px;
+    font-size: 45px;
+    line-height: 45px;
     margin-bottom: 7px;
-    margin-top: -130px;
+    margin-top: -150px;
+    text-align: center;
+  }
+
+  .main_subtitle {
+    font-family: "ProximaRegular", sans-serif;
+    color: #dfdfdf;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .center_all {
+    margin-left: 0;
   }
 
   .wrap {
     margin-top: 90px;
+    
   }
 
   .button_main {
