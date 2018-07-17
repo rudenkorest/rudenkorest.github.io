@@ -31,7 +31,6 @@
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 
-
 html, body {
   height: 100%;
   overflow-x: hidden !important;
@@ -245,7 +244,7 @@ li:focus:after {
 .circle_down {
   position: absolute;
   bottom: -5px;
-  left: 0;
+  left: 16px;
 }
 
 /* .line {
@@ -402,7 +401,7 @@ li:focus:after {
 
   li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 7px;
     font-size: 14px;
 
   }
@@ -436,8 +435,9 @@ li:focus:after {
   }
 
   .wrap {
-    margin-top: 90px;
-    
+    margin-top: 50px;
+    transform: scale(0.8);
+
   }
 
   .button_main {
