@@ -309,17 +309,37 @@ nav ul li a {
 
 
 
-@media (max-width: 576px) {
+@media (max-width: 576px) { /* iPhone 6 */
   #particles-contents {
     position: static;
   }
 
   .price {
-    margin-top: 800px;
+    margin-top: 1100px;
+  }
+
+  .header_title {
+    font-size: 34px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+  }
+
+  .absent {
+    margin-top: 55px;
   }
 
   .networks_mobile {
     margin-bottom: 60px;
   }
 
+}
+
+@media (max-width: 320px) { /* iPhone 5 */
+  body {
+    text-align: center;
+  }
+
+  .price {
+    margin-top: 1200px;
+  }
 }
