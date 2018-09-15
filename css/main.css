@@ -1,531 +1,93 @@
-@font-face {
-  font-family: "ProximaRegular";
-  src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot");
-  src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"),
-  url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
+html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
 }
 
-@font-face {
-  font-family: "ProximaSemibold";
-  src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot");
-  src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"),
-  url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "ProximaBold";
-  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot");
-  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix")format("embedded-opentype"),
-  url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"),
-  url("../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: normal;
-}
-
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-
-
-html, body {
-  height: 100%;
-  overflow-x: hidden !important;
-  overflow-y: scroll !important;
-  width: 100%;
-  position: fixed;
-
-}
-
-body {
-  font-family: "ProximaRegular", sans-serif;
-  font-size: 18px;
-}
-
-header {
-  height: 100vh;
-  background-color: #444343;
-  background: url('../img/background_main.png') no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-}
-
-
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.logo {
-  margin-top: 15px;
-}
-
-.header_nav {
-  list-style: none;
-  color: #fff;
-  margin-top: 35px;;
-
-}
-
-li {
-  display: inline-block;
-  margin-right: 39px;
-  font-size: 14px;
-
-}
-
-li::after {
-  background-color: #f15929;
-    margin-top: 5px;
-    display: block;
-    content: "";
-    height: 2px;
-    width: 0%;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
-}
-
-li:hover:after,
-li:focus:after {
-    width: 100%;
-}
-
-.button {
-  width: 125px;
-  height: 32px;
-  border-radius: 16px;
-  background-color: #f15929;
-  margin-left: 100px;
-  margin-top: 35px;
-}
-
-.button_text {
-  font-family: "ProximaSemibold", sans-serif;
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-  line-height: 32px;
-}
-
-.main_title {
-  font-family: "ProximaBold", sans-serif;
-  color: #fff;
-  font-size: 64px;
-  line-height: 67.01px;
-  margin-bottom: 0px;
-}
-
-.main_subtitle {
-  font-family: "ProximaRegular", sans-serif;
-  color: #dfdfdf;
-  font-size: 18px;
-  line-height: 26px;
-  margin-top: 24px;
-}
-
-.button_main {
-  width: 252px;
-  height: 62px;
-  border-radius: 31px;
-  background-color: #f15929;
-  margin-left: 14px;
-}
-
-.button_main:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-
-}
-
-.button_text_main {
-  font-family: "ProximaSemibold", sans-serif;
-  font-size: 24px;
-  color: #fff;
-  text-align: center;
-  line-height: 62px;
-  margin-top: 82px;
-}
-
-.center_all {
-  margin-left: 100px;
-  margin-top: 200px;
-}
-
-.arrow {
-  margin-left: 700px;
-  margin-top: 10px;
-}
-
-
-
-.wrap {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-.card {
-  width: 458px;
-  height: 288px;
-  position: relative;
-  perspective: 1000px;
-}
-.front, .back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1s;
-  backface-visibility: hidden;
-  border-radius: 10px;
-}
-.front {
-  background-color: #161616;
-  background-image: url('../img/card_front.png');
-
-}
-.back {
-  background-color: #161616;
-  background-image: url('../img/card_back.png');
-  transform: rotateY(180deg);
-}
-.card:hover .front {transform: rotateY(180deg);}
-.card:hover .back {transform: rotateY(360deg);}
-
-
-
-.about {
-  height: 100%;
+h3 {
   margin: 0;
   padding: 0;
 }
 
-.about_title {
-  font-family: "ProximaBold", sans-serif;
-  font-size: 54px;
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #1f2124;
+  color: #fff;
+}
+
+.header_title {
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header_title_dots {
+  color: #ef2525;
+}
+
+.counter {
+  margin-top: 25px;
+  margin-bottom: -5px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.subscribers {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.absent {
+  margin-top: 137px;
+}
+
+.button_more {
+  display: block;
   text-align: center;
   margin-top: 100px;
 }
 
-.about_image {
+.btn {
+  background-color: #ef2525;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 30px;
+  padding: 13px 42px
+}
+
+#particles-js {
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
+  z-index: 1;
 }
 
-
-.about_subtitle {
-  font-family: "ProximaRegular", sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 70px;
-}
-
-.circle_up {
+#particles-contents {
   position: absolute;
   top: 0;
-  right: -15px;
-  z-index: -1;
-}
-.circle_down {
-  position: absolute;
-  bottom: -5px;
-  left: 16px;
-}
-
-/* .line {
-  border-bottom: 20px solid #f15929;
-} */
-
-.container-fluid {
-   padding: 0px;
-}
-
-.howto_correct {
-  margin-top: 63px;
-}
-
-.bg {
-  position: absolute;
-  left: 42px;
-  top: 100px;
-  width: 100%;
-  height: 100%;
-  background: url('../img/howto_bg.png') no-repeat;
-  z-index: -1;
-}
-
-.bg_plus{
-  position: absolute;
-  left: 670px;
-  top: -90px;
-  width: 100%;
-  height: 100%;
-  background: url('../img/plus_bg.png') no-repeat;
-}
-
-.partners {
-  height: 345px;
-  padding-bottom: 1000px;
-}
-
-.partners_correct {
-  margin-top: 65px;
-}
-
-.arrows {
-  display: block;
-  font-size: 45px;
-  color: #f15929;
-  text-align: center;
-  margin-top: 40%;
-}
-
-.shop {
-  display: block;
-  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
 }
 
 
-.shop_name {
-  font-family: "ProximaBold", sans-serif;
-}
-
-.shop_description {
-  font-style: italic;
-}
-
-.shop_discount {
-  font-family: "ProximaSemibold", sans-serif;
-  font-size: 22px;
-}
-
-.icons {
-  color: #f15929;
-  font-size: 18px;
-}
-
-.shop_adress {
-  font-family: "ProximaRegular", sans-serif;
-  font-size: 18px;
-  text-align: left;
-  margin-left: 15px;
-}
-
-.info_position {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#info_margin_phone {
-  margin-right: 152px;
-  margin-top: 15px;
-}
-
-#info_margin_url {
-  margin-left: 11px;
-  margin-top: 15px;
-}
-
-/* ADAPTIVE */
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-
-  .logo {
-    text-align: center;
-
-
+@media (max-width: 576px) {
+  #particles-contents {
+    position: static;
   }
 
-  li {
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 14px;
-
-  }
-  .button {
-    text-align: center;
-    margin: auto;
-    margin-top: -10px;
-  }
-
-  .main_title {
-    font-family: "ProximaBold", sans-serif;
-    color: #fff;
-    font-size: 55px;
-    line-height: 55px;
-    margin-bottom: 7px;
-    margin-top: -130px;
-  }
-
-  .wrap {
-    margin-top: 90px;
-  }
-
-  .button_main {
-    visibility: hidden;
-  }
-}
-
-@media (max-width: 575.98px) {
-
-  header {
-    height: 1000px;
-    background: url('../img/background_main.png') no-repeat center center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-  }
-
-  .logo {
-    text-align: center;
-
-
-  }
-
-  li {
-    display: block;
-    margin-right: 45px;
-    font-size: 13px;
-    text-align: center;
-
-  }
-  .button {
-    text-align: center;
-    margin: auto;
-    margin-top: -10px;
-  }
-
-  .main_title {
-    font-family: "ProximaBold", sans-serif;
-    color: #fff;
-    font-size: 45px;
-    line-height: 45px;
-    margin-bottom: 7px;
-    margin-top: -150px;
-    text-align: center;
-  }
-
-  .main_subtitle {
-    font-family: "ProximaRegular", sans-serif;
-    color: #dfdfdf;
-    font-size: 15px;
-    line-height: 20px;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .center_all {
-    margin-left: 0;
-  }
-
-  .wrap {
-    margin-top: 2px;
-  }
-
-  .card {
-    width: 293px;
-    height: 184px;
-    position: relative;
-    perspective: 1000px;
-  }
-
-  .front {
-    background: url('../img/card_front.png') no-repeat center center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-
-  }
-  .back {
-    background-color: #161616;
-    background: url('../img/card_back.png') no-repeat center center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-
-    transform: rotateY(180deg);
-  }
-
-  .button_main {
-    visibility: hidden;
-  }
-
-}
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-
-  .logo {
-    text-align: center;
-
-
-  }
-
-  .header_nav {
-    text-align: center;
-  }
-
-  li {
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 14px;
-
-  }
-  .button {
-    text-align: center;
-    margin: auto;
-    margin-top: -10px;
-  }
-
-  .main_title {
-    font-family: "ProximaBold", sans-serif;
-    color: #fff;
-    font-size: 55px;
-    line-height: 55px;
-    margin-bottom: 7px;
-    margin-top: -130px;
-  }
-
-  .wrap {
-    margin-top: 90px;
-  }
-
-  .button_main {
-    visibility: hidden;
-  }
-
-  .arrow {
-    visibility: hidden;
-  }
-
-  .circle_up {
-    visibility: hidden;
-    margin-right: 30px;
-  }
-  .bg_plus {
-    visibility: hidden;
-  }
-  .bg {
-    visibility: hidden;
-  }
 }
