@@ -7,10 +7,10 @@
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/price.css">
 </head>
 <body>
-  <div class="first_screen">
+
   <header>
     <div class="container">
             <nav>
@@ -25,6 +25,7 @@
                   </div>
                   <div class="nav-wrapper">
                         <ul>
+                              <li><a href="index.html">Главная</a></li>
                               <li><a href="price.html">Прайс</a></li>
                               <li><a href="#">Статистика</a></li>
                               <li><a href="#">Информация</a></li>
@@ -33,49 +34,6 @@
             </nav>
       </div>
   </header>
-
-  <div id="particles-js">
-  <div id="particles-contents" class="container">
-    <h1 class="header_title">
-      Наши социальные сети <span class="header_title_dots">:</span>
-    </h1>
-    <div class="row absent">
-      <div class="col-12 col-md-3 text-center networks_mobile">
-        <a href="https://www.instagram.com/this_irpin_grisha/">
-          <img src="img/insta_logo.png" alt="Instagram">
-        <h3 id="instagram" class="counter"></h3>
-        <span class="subscribers">подписчика</span>
-        </a>
-      </div>
-      <div class="col-12 col-md-3 text-center networks_mobile">
-        <a href="https://www.vk.com/this_irpin_nigger">
-          <img src="img/vk_logo.png" alt="Vkontakte">
-        <h3 id="vk" class="counter"></h3>
-        <span class="subscribers">подписчика</span>
-        </a>
-      </div>
-      <div class="col-12 col-md-3 text-center networks_mobile">
-        <a href="https://www.t.me/this_irpin_nigger">
-          <img src="img/telegram_logo.png" alt="Telegram">
-        <h3 id="telegram" class="counter"></h3>
-        <span class="subscribers">подписчика</span>
-        </a>
-      </div>
-      <div class="col-12 col-md-3 text-center networks_mobile">
-        <a href="https://www.facebook.com/tinirpin">
-          <img src="img/fb_logo.png" alt="Facebook">
-        <h3 id="fb" class="counter"></h3>
-        <span class="subscribers">подписчика</span>
-        </a>
-      </div>
-    </div>
-    <div class="button_more">
-    <a class="btn btn_more" href="#">Узнать цены</a>
-    </div>
-  </div>
-  </div>
-  </div>
-
 
   <div class="container price">
     <h1 class="header_title_price">Прайс <span class="header_title_dots">:</span></h1>
@@ -265,27 +223,6 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="js/countUp.js" type="text/javascript"></script>
-  <script src="js/particles.min.js"></script>
-  <script src="js/app.js" type="text/javascript"></script>
-
-  <script type="text/javascript">
-  var options = {
-  useEasing: true,
-  useGrouping: true,
-  separator: '',
-  decimal: '.',
-  };
-  var instagram = new CountUp('instagram', 0, 8344, 0, 3, options);
-  var vk = new CountUp('vk', 0, 19932, 0, 4, options);
-  var telegram = new CountUp('telegram', 0, 1178, 0, 2, options);
-  var fb = new CountUp('fb', 0, 1345, 0, 1, options);
-  instagram.start();
-  vk.start();
-  telegram.start();
-  fb.start();
-  </script>
 
 
 </body>
