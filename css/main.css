@@ -314,4 +314,12 @@ nav ul li a {
     position: static;
   }
 
+  .price {
+    margin-top: 800px;
+  }
+
+  .networks_mobile {
+    margin-bottom: 60px;
+  }
+
 }

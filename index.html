@@ -40,23 +40,23 @@
       Наши социальные сети <span class="header_title_dots">:</span>
     </h1>
     <div class="row absent">
-      <div class="col-12 col-md-3 text-center">
+      <div class="col-12 col-md-3 text-center networks_mobile">
         <a href="#"><img src="img/insta_logo.png" alt="Instagram">
         <h3 id="instagram" class="counter"></h3>
         <span class="subscribers">подписчиков</span>
         </a>
       </div>
-      <div class="col-12 col-md-3 text-center">
+      <div class="col-12 col-md-3 text-center networks_mobile">
         <img src="img/vk_logo.png" alt="Instagram">
         <h3 id="vk" class="counter"></h3>
         <span class="subscribers">подписчиков</span>
       </div>
-      <div class="col-12 col-md-3 text-center">
+      <div class="col-12 col-md-3 text-center networks_mobile">
         <img src="img/telegram_logo.png" alt="Instagram">
         <h3 id="telegram" class="counter"></h3>
         <span class="subscribers">подписчиков</span>
       </div>
-      <div class="col-12 col-md-3 text-center">
+      <div class="col-12 col-md-3 text-center networks_mobile">
         <img src="img/fb_logo.png" alt="Instagram">
         <h3 id="fb" class="counter"></h3>
         <span class="subscribers">подписчиков</span>
@@ -69,8 +69,8 @@
   </div>
   </div>
 
-  <section class="price" id="price_yakor">
-  <div class="container">
+
+  <div class="container price">
     <h1 class="header_title_price">Прайс <span class="header_title_dots">:</span></h1>
     <div class="row">
       <div class="col-md-12 ">
@@ -282,22 +282,7 @@
 
   <script type="text/javascript">
 
-  $(document).ready(function(){
-  $("#menu").on("click","a", function (event) {
-   //отменяем стандартную обработку нажатия по ссылке
-   event.preventDefault();
 
-   //забираем идентификатор бока с атрибута href
-   var price_yakor = $(this).attr('href'),
-
-   //узнаем высоту от начала страницы до блока на который ссылается якорь
-   top = $(id).offset().top;
-
-   //анимируем переход на расстояние - top за 1500 мс
-   $('body,html').animate({scrollTop: top}, 1500);
-  });
-  });
-  </script>
 
 </body>
 </html>
