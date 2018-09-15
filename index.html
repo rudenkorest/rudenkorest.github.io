@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+  <div class="first_screen">
   <header>
     <div class="container">
             <nav>
@@ -24,7 +25,7 @@
                   </div>
                   <div class="nav-wrapper">
                         <ul>
-                              <li><a href="#">Прайс</a></li>
+                              <li><a href="#price_yakor">Прайс</a></li>
                               <li><a href="#">Статистика</a></li>
                               <li><a href="#">Информация</a></li>
                         </ul>
@@ -46,17 +47,17 @@
         </a>
       </div>
       <div class="col-12 col-md-3 text-center">
-        <img src="img/insta_logo.png" alt="Instagram">
+        <img src="img/vk_logo.png" alt="Instagram">
         <h3 id="vk" class="counter"></h3>
         <span class="subscribers">подписчиков</span>
       </div>
       <div class="col-12 col-md-3 text-center">
-        <img src="img/insta_logo.png" alt="Instagram">
+        <img src="img/telegram_logo.png" alt="Instagram">
         <h3 id="telegram" class="counter"></h3>
         <span class="subscribers">подписчиков</span>
       </div>
       <div class="col-12 col-md-3 text-center">
-        <img src="img/insta_logo.png" alt="Instagram">
+        <img src="img/fb_logo.png" alt="Instagram">
         <h3 id="fb" class="counter"></h3>
         <span class="subscribers">подписчиков</span>
       </div>
@@ -64,6 +65,7 @@
     <div class="button_more">
     <a class="btn btn_more" href="#">Узнать цены</a>
     </div>
+  </div>
   </div>
   </div>
 
@@ -276,6 +278,25 @@
   vk.start();
   telegram.start();
   fb.start();
+  </script>
+
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+  $("#menu").on("click","a", function (event) {
+   //отменяем стандартную обработку нажатия по ссылке
+   event.preventDefault();
+
+   //забираем идентификатор бока с атрибута href
+   var price_yakor = $(this).attr('href'),
+
+   //узнаем высоту от начала страницы до блока на который ссылается якорь
+   top = $(id).offset().top;
+
+   //анимируем переход на расстояние - top за 1500 мс
+   $('body,html').animate({scrollTop: top}, 1500);
+  });
+  });
   </script>
 
 </body>

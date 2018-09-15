@@ -277,7 +277,7 @@ nav ul li a {
 }
 
 #nav:checked + .nav-btn i {
-      background: #fff;
+      background: #000;
       transition: transform 0.2s ease;
 }
 
