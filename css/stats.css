@@ -29,9 +29,12 @@ body {
 }
 
 .header_title {
+  text-align: center;
   padding-top: 50px;
   font-size: 40px;
   font-weight: 700;
+  margin-top: 37px;
+  margin-bottom: 95px;
 }
 
 .header_title_dots {
@@ -103,25 +106,28 @@ nav ul li a {
       font-weight: 600;
 }
 
-.first_screen {
-  height: 100vh;
+.network_title {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
 .stats_name {
   font-size: 14px;
   line-height: 14px;
   margin-bottom: 10px;
+  margin-left: 13px;
 }
 
-.all_stats {
-  display: inline-block;
-}
-
-.stats_name::before {
+.stats_all {
   content: "";
   border-left: 1px solid #ef2525;
-  height: 100%;
+  height: 12%;
+
 }
+
+
 
 .stats_dots {
   color: #ef2525;
@@ -129,6 +135,12 @@ nav ul li a {
 
 .stats_count {
   font-weight: 700;
+}
+
+.stats_url {
+  font-style: italic;
+  font-weight: 300;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 864px) {

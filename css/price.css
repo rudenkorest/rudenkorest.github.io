@@ -21,6 +21,10 @@ a:hover {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+  margin: 0;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -126,6 +130,65 @@ nav ul li a {
 .first_screen {
   height: 100vh;
 }
+
+.top_full {
+  height: 464px;
+  width: 360px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.top_full_inside {
+  display: block;
+  height: 185px;
+  width: 100%;
+  background-color: #2cf444;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+}
+
+.top_img {
+  height: 85px;
+  width: 83px;
+  margin-top: 22px;
+}
+
+.top_title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 26px;
+}
+
+.top_list {
+  padding-left: 25px;
+  margin-top: 32px;
+
+}
+
+.top_list_item {
+  color: #1f2124;
+  font-size: 14px;
+
+}
+
+.top_old_price {
+  font-size: 23px;
+  color: #ef2525;
+  text-decoration: line-through;
+  text-align: center;
+  font-weight: 700;
+}
+
+.top_new_price {
+  font-size: 33px;
+  font-weight: 700;
+  color: #1f2124;
+  text-align: center;
+}
+
+
+
 
 @media screen and (max-width: 864px) {
       .logo {
