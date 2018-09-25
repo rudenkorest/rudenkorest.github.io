@@ -16,6 +16,11 @@ a {
   cursor: pointer;
 }
 
+ul, li, ol {
+  margin: 0;
+  padding: 0;
+}
+
 a:hover {
   color: #fff;
   text-decoration: none;
@@ -132,8 +137,11 @@ nav ul li a {
 }
 
 .top_full {
-  height: 464px;
-  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 464px;
+  width: 100%;
   background-color: #fff;
   border-radius: 25px;
 }
@@ -161,7 +169,6 @@ nav ul li a {
 }
 
 .top_list {
-  padding-left: 25px;
   margin-top: 32px;
 
 }
@@ -178,6 +185,7 @@ nav ul li a {
   text-decoration: line-through;
   text-align: center;
   font-weight: 700;
+  margin-top: 32px;
 }
 
 .top_new_price {
@@ -187,10 +195,75 @@ nav ul li a {
   text-align: center;
 }
 
+.first_full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 384px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 25px;
+  margin-top: 40px;
+}
+
+.first_full_inside {
+  display: block;
+  height: 145px;
+  width: 100%;
+  background-color: #13c3e9;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+}
+
+.first_img {
+  height: 55px;
+  width: 53px;
+  margin-top: 22px;
+}
+
+.first_old_price {
+  font-size: 23px;
+  color: #ef2525;
+  text-decoration: line-through;
+  text-align: center;
+  font-weight: 700;
+
+}
 
 
+.second_img {
+  height: 50px;
+  width: 50px;
+  margin-top: 22px;
+}
 
-@media screen and (max-width: 864px) {
+.second_full_inside {
+  display: block;
+  height: 145px;
+  width: 100%;
+  background-color: #ebd800;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  text-align: center;
+}
+
+.packets {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1024px) { /* iPhone 5 */
+  .top_list_item {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+      .top_full {
+        margin-top: 40px;
+      }
+
       .logo {
             padding: 0;
       }
@@ -351,6 +424,14 @@ nav ul li a {
   .logo {
         margin-top: 15px;
         margin-left: 0;
+  }
+
+  .header_title_price {
+    padding-bottom: 0;
+  }
+
+  .top_full {
+    margin-top: 40px;
   }
 
 
