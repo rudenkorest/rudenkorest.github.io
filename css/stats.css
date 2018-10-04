@@ -142,6 +142,12 @@ nav ul li a {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 991px) {
+      .stats_all {
+        height: 17%;
+      }
+    }
+
 @media screen and (max-width: 864px) {
       .logo {
             padding: 0;
@@ -305,12 +311,20 @@ nav ul li a {
         margin-left: 0;
   }
 
+  .stats_all {
+    height: 22%;
+  }
+
 
 }
 
 @media (max-width: 320px) { /* iPhone 5 */
   body {
     text-align: center;
+  }
+
+  .stats_all {
+    text-align: left;
   }
 
 }
